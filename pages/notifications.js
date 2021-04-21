@@ -1,4 +1,4 @@
-const Notification=()=>{
+const Notifications=()=>{
    return(
       <div>
          Notification
@@ -6,4 +6,4 @@ const Notification=()=>{
    )
 }
 
-export default Notification
+export default Notifications
