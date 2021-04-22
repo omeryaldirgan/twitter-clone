@@ -1,3 +1,5 @@
+import Home from "./index";
+
 const Explore=()=>{
    return(
      <div>
@@ -5,5 +7,5 @@ const Explore=()=>{
      </div>
    )
 }
-
+Explore.headerTitle="Explore";
 export default Explore

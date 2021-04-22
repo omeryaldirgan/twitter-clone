@@ -1,3 +1,5 @@
+import Notifications from "./notifications";
+
 const Messages=()=>{
    return(
       <div>
@@ -5,5 +7,5 @@ const Messages=()=>{
       </div>
    )
 }
-
+Messages.headerTitle="Messages";
 export default Messages

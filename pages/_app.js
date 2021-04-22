@@ -1,13 +1,14 @@
 import '../styles/globals.css'
 import { Link } from "../components/Link";
+import "../server";
 
 function MyApp({ Component, pageProps }) {
 
   return (
      <div className='flex flex-col h-screen'>
-         <header className="flex items-center px-4 py-4 border-b ">
+         <header className="flex items-center px-4 py-4 border-b">
            <img  className="w-7 h-7 rounded-full" src={'https://pbs.twimg.com/profile_images/1350752989926076416/DpApLJT9_400x400.jpg'}/>
-           <p className='ml-6 text-lg font-extrabold'>Latest Tweets</p>
+           <p className='ml-6 text-lg font-extrabold'>{Component.headerTitle}</p>
          </header>
 
          <main className='flex-1'>

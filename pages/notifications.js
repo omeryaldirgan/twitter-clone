@@ -1,3 +1,5 @@
+import Explore from "./explore";
+
 const Notifications=()=>{
    return(
       <div>
@@ -5,5 +7,5 @@ const Notifications=()=>{
       </div>
    )
 }
-
+Notifications.headerTitle="Notifications";
 export default Notifications
