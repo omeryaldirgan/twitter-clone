@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
                     <HomeIconEmpty className="p-px text-gray-500 w-7 h-7" />
                  )
               }
+              
            </Link>
            <Link
               href="/explore"
