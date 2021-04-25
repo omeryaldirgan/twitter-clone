@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
            <p className='ml-6 text-lg font-extrabold'>{Component.headerTitle}</p>
          </header>
 
-         <main className='flex-1'>
+         <main className='flex-1 overflow-scroll'>
            <Component {...pageProps} />
          </main>
 
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
                     <HomeIconEmpty className="p-px text-gray-500 w-7 h-7" />
                  )
               }
-              
+
            </Link>
            <Link
               href="/explore"

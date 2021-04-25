@@ -49,11 +49,9 @@ let server = createServer({
    },
 
    seeds(server) {
-      server.create("tweet", "fromSam", { text: "just setting up my twttr" });
+      /*server.create("tweet", "fromSam", { text: "just setting up my twttr" });
       server.create("tweet", "fromSam", { text: "Hi" });
-      server.create("tweet", "fromSam", {
-         text: "I still don't understand useEffect",
-      });
+      server.create("tweet", "fromSam", {  text: "I still don't understand useEffect"});*/
       server.createList("tweet", 50);
    },
 });
