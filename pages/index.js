@@ -2,17 +2,20 @@ import Head from 'next/head'
 import useSWR from 'swr'
 
 const fetcher=(url)=>fetch(url).then((res)=>res.json())
+
 export default function Home() {
   let {data}=useSWR("/api/tweets",fetcher);
+
   if(!data)return "Loading..."
+
   return (
    <div>
       <Head>
          <title>Create Next App</title>
          <link rel="icon" href="/favicon.ico" />
       </Head>
-      {[...data.tweets].reverse().map((tweet) => (
-         <div className="px-4 py-3 border-b border-gray-200">
+      {[...data.tweets].reverse().map((tweet,inx) => (
+         <div className="px-4 py-3 border-b border-gray-200" key={inx}>
             <div className="flex">
                {/* Avatar */}
                <img
